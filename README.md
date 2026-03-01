@@ -5,7 +5,7 @@ export default async function handler(req, res) {
 
   const { titolo, data, descrizione } = req.body;
 
-  const webhookUrl = "INCOLLA_QUI_IL_TUO_WEBHOOK_DISCORD";
+  const webhookUrl = "https://discord.com/api/webhooks/1233450953970024469/Ulh5vwsR6454m2fQGHoylEllOb9JmXoawWKpWAyvOqjxO_nGTfVo-aHXNN7odbZF9JQL";
 
   const message = {
     content: `📌 Nuovo Evento Creato!
