@@ -6,14 +6,22 @@ export default async function handler(req, res) {
   try {
     const { titolo, data, descrizione } = req.body;
 
-    const webhookUrl = "https://discord.com/api/webhooks/1233450953970024469/Ulh5vwsR6454m2fQGHoylEllOb9JmXoawWKpWAyvOqjxO_nGTfVo-aHXNN7odbZF9JQL";
+    // Il tuo webhook Discord
+    const webhookUrl = "INSERISCI_IL_TUO_WEBHOOK_DISCORD_QUI";
+
+    // Link alla bacheca
+    const linkBacheca = "https://suncitygdr.infinityfreeapp.com";
+
+    const content = `📌 **Nuovo Evento!**\n\n` +
+                    `**Titolo:** ${titolo}\n` +
+                    `**Data:** ${data}\n` +
+                    `**Descrizione:** ${descrizione}\n` +
+                    `🔗 [Vai alla Bacheca](${linkBacheca})`;
 
     const response = await fetch(webhookUrl, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        content: `📌 Nuovo Evento!\n\nTitolo: ${titolo}\nData: ${data}\nDescrizione: ${descrizione}`
-      })
+      body: JSON.stringify({ content })
     });
 
     if (!response.ok) {
