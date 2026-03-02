@@ -6,8 +6,8 @@ export default async function handler(req, res) {
   try {
     const { titolo, data, descrizione } = req.body;
 
-    // Il tuo webhook Discord
-    const webhookUrl = "INSERISCI_IL_TUO_WEBHOOK_DISCORD_QUI";
+    // Webhook Discord
+    const webhookUrl = "https://discord.com/api/webhooks/1233450953970024469/Ulh5vwsR6454m2fQGHoylEllOb9JmXoawWKpWAyvOqjxO_nGTfVo-aHXNN7odbZF9JQL";
 
     // Link alla bacheca
     const linkBacheca = "https://suncitygdr.infinityfreeapp.com";
