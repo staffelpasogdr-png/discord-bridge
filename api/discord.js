@@ -8,7 +8,7 @@ export default async function handler(req, res) {
 
     // === CONFIGURAZIONE ===
     const webhookUrl = "https://discord.com/api/webhooks/1233450953970024469/Ulh5vwsR6454m2fQGHoylEllOb9JmXoawWKpWAyvOqjxO_nGTfVo-aHXNN7odbZF9JQL";
-    const linkBacheca = "http://suncitygdreventi.atwebpages.com";
+    const linkBacheca = "https://suncitygdr.infinityfreeapp.com/";
     const roleId = "1283196287004577822"; // ID del ruolo @established
 
     // === PAYLOAD ===
